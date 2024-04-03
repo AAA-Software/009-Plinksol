@@ -7,10 +7,11 @@ export const ErrorCard = () => {
     <CardWrapper
       headerLabel="Oops! Something went wrong!"
       backButtonHref="/auth/signin"
-      backButtonLabel="Back to login"
+      backButtonAction="Sign In"
+      backButtonLabel="Back to"
     >
       <div className="w-full flex justify-center items-center">
-      <FaExclamationTriangle className="text-destructive h-10 w-10" />
+        <FaExclamationTriangle className="text-destructive h-10 w-10" />
       </div>
     </CardWrapper>
   );

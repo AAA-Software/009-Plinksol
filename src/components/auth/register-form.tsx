@@ -1,9 +1,5 @@
 "use client";
 
-import Wrapper from "@/components/wrapper/wrapper";
-import Link from "next/link";
-import React, { useState, useTransition } from "react";
-import { Input } from "@/components/ui/input";
 import {
   Form,
   FormControl,
@@ -12,17 +8,19 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { useForm } from "react-hook-form";
+import { Input } from "@/components/ui/input";
+import Wrapper from "@/components/wrapper/wrapper";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useState, useTransition } from "react";
+import { useForm } from "react-hook-form";
 import * as z from "zod";
 
 import { CardWrapper } from "@/components/auth/card-wrapper";
-import { Button } from "@/components/ui/button";
 import { FormError } from "@/components/auth/form-error";
 import { FormSuccess } from "@/components/auth/form-success";
-import { Checkbox } from "@/components/ui/checkbox";
-import { RegisterSchema } from "../../schemas";
+import { Button } from "@/components/ui/button";
 import { register } from "../../actions/register";
+import { RegisterSchema } from "../../schemas";
 
 interface RegisterFormProps {
   registerLabel: string;
@@ -93,6 +91,7 @@ const RegisterForm = ({
         headerLabel="Register"
         backButtonLabel="Already have an account?"
         backButtonHref={signinUrl}
+        backButtonAction="Sign In"
         showSocial
       >
         <Form {...form}>

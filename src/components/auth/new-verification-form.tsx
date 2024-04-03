@@ -32,7 +32,7 @@ export const NewVerificationForm = () => {
       })
       .catch(() => {
         setError("Something went wrong!");
-      })
+      });
   }, [token, success, error]);
 
   useEffect(() => {
@@ -42,18 +42,15 @@ export const NewVerificationForm = () => {
   return (
     <CardWrapper
       headerLabel="Confirming your verification"
-      backButtonLabel="Back to login"
+      backButtonLabel="Already have an account?"
       backButtonHref="/auth/signin"
+      backButtonAction="Sign In"
     >
       <div className="flex items-center w-full justify-center">
-        {!success && !error && (
-          <BeatLoader />
-        )}
+        {!success && !error && <BeatLoader />}
         <FormSuccess message={success} />
-        {!success && (
-          <FormError message={error} />
-        )}
+        {!success && <FormError message={error} />}
       </div>
     </CardWrapper>
-  )
-}
+  );
+};
