@@ -53,10 +53,14 @@ const LegalsNavbar = () => {
 
         <div className="hidden lg:block">
           <div className="flex flex-row items-center gap-2 2xl:gap-4">
-            <Button variant={"link"}>Login</Button>
-            <Button>
-              Sign Up <ArrowRight className="ml-3" />
-            </Button>
+            <Link href="/auth/signin">
+              <Button variant={"link"}>Login</Button>
+            </Link>
+            <Link href="/auth/register">
+              <Button>
+                Sign Up <ArrowRight className="ml-3" />
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -96,12 +100,16 @@ const LegalsNavbar = () => {
 
                   <div className="flex flex-row-reverse items-center gap-4 mt-4">
                     <SheetClose asChild>
-                      <Button variant={"link"}>Login</Button>
+                      <Link href="/auth/signin">
+                        <Button variant={"link"}>Login</Button>
+                      </Link>
                     </SheetClose>
                     <SheetClose asChild>
-                      <Button>
-                        Sign Up <ArrowRight className="ml-3" />
-                      </Button>
+                      <Link href="/auth/register">
+                        <Button>
+                          Sign Up <ArrowRight className="ml-3" />
+                        </Button>
+                      </Link>
                     </SheetClose>
                   </div>
                 </div>
