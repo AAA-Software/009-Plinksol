@@ -52,7 +52,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <div className="hidden lg:block">
+        <div className="hidden xl:block">
           <div className="flex flex-row items-center gap-10 2xl:gap-16">
             <NavItems />
           </div>

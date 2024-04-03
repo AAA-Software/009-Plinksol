@@ -11,7 +11,7 @@ const Wrapper = ({
   return (
     <div
       className={cn(
-        "mx-auto w-full max-w-screen-3xl px-3 md:px-20 xl:px-10 2xl:px-20",
+        "mx-auto w-full max-w-screen-3xl px-3 md:px-8 lg:px-10 xl:px-10 2xl:px-20",
         className
       )}
     >

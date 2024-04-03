@@ -27,9 +27,9 @@ const Footer = () => {
             alt="Plinksol logo"
           />
         </div>
-        <div className="mt-5" />
+        <div className="mt-5 md:mt-8 2xl:mt-10" />
         <NavItems />
-        <div className=" w-full md:w-[35%] flex flex-col items-center justify-center mt-10">
+        <div className=" w-full 2xl:w-[35%] flex flex-col items-center justify-center mt-10">
           <Separator />
         </div>
       </div>

@@ -98,11 +98,11 @@ const Hero = () => {
           </div>
         </div>
 
-        <h1 className=" font-sora text-5xl md:text-7xl font-bold text-white text-center mt-2 md:mt-0">
+        <h1 className=" font-sora text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center mt-2 md:mt-0">
           Welcome to
           <br /> <span className="text-[#63CA2D]">Plinksol</span> Presale
         </h1>
-        <p className=" text-base font-sora text-white/70 max-w-full px-0.5 md:px-0 md:max-w-xl text-center mt-2 md:mt-4">
+        <p className=" text-base font-sora text-white/70 max-w-full px-0.5 md:px-0 md:max-w-md xl:max-w-xl text-center mt-2 md:mt-4">
           Discover the future of online gaming with PlinkoSol – the platform
           that brings the excitement of Plinko to the blockchain.
         </p>
@@ -113,10 +113,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=" absolute bottom-[-8rem] md:bottom-20 w-full h-full">
-        <div className="relative w-full h-[70%] md:h-full">
+      <div className=" absolute bottom-[-8rem] md:bottom-[-10rem] lg:bottom-[-10rem] xl:bottom-[-10rem] 2xl:bottom-20 w-full h-full">
+        <div className="relative w-full h-[70%] 2xl:h-full">
           <Image
-            className=" object-cover md:object-contain"
+            className=" object-cover lg:object-contain"
             fill
             quality={100}
             src="/img/hero-banner.png"

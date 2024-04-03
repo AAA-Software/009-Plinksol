@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const PrivacyPolicyContent = () => {
   return (
-    <div className=" w-full flex flex-col items-center mb-[10rem] md:mb-[15rem] -mt-[75vh]">
+    <div className=" w-full flex flex-col items-center mb-[10rem] md:mb-[15rem]">
       <div className="flex flex-col items-start w-full px-3 max-w-full md:max-w-2xl mt-4">
         <div className="flex flex-row items-start gap-4 mt-4">
           <Image

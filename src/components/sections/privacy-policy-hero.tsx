@@ -2,18 +2,9 @@ import Image from "next/image";
 
 const PrivacyPolicyHero = () => {
   return (
-    <div className="flex flex-col h-fit">
-      <div className=" w-full h-screen relative">
-        <div className="relative w-full h-full">
-          <Image
-            className=" object-cover md:object-contain"
-            fill
-            src="/img/hero-backdrop.png"
-            alt="Backdrop"
-          />
-        </div>
-
-        <div className="flex flex-col items-center w-full absolute top-14 md:top-20 z-10">
+    <div className="flex flex-col h-full mt-20 md:mt-28">
+      <div className=" w-full">
+        <div className="flex flex-col items-center w-full z-10">
           <div className=" md:hidden w-full">
             <div className="flex flex-row items-center w-full justify-center">
               <div className=" relative h-[3px] w-[50px]">
