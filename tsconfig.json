@@ -29,6 +29,6 @@
     "src/app/(routes)/api/auth/[...nextauth]/options.js",
     "src/app/(routes)/api/auth/[...nextauth]/route.js",
     "src/app/api/expert/count.js"
-  ],
+, "src/middleware.js"  ],
   "exclude": ["node_modules"]
 }
