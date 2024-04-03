@@ -46,7 +46,7 @@ const Carousel = () => {
       <div className="relative overflow-hidden p-4">
         <div className="mx-auto max-w-[1336px]">
           <div className="flex items-center justify-between">
-            <h2 className="mb-4 text-4xl text-white font-sora font-semibold">
+            <h2 className="mb-4 text-4xl md:text-4xl text-white font-sora font-semibold">
               Purpose & Utilities
             </h2>
 

@@ -5,19 +5,19 @@ import Wrapper from "../wrapper/wrapper";
 const Roadmap = () => {
   return (
     <div id="roadmap" className=" w-full ">
-      <div className=" pt-[10rem]" />
+      <div className="pt-[12rem] md:pt-[10rem]" />
       <div className="w-full flex flex-col items-center">
         <div className=" relative flex items-center flex-col">
           <RoadmapTextSvg />
-          <h2 className=" font-sora text-6xl font-bold text-white text-center absolute top-14">
+          <h2 className=" font-sora text-5xl md:text-6xl font-bold text-white text-center absolute top-14">
             Roadmap
           </h2>
         </div>
-        <div className=" mt-[6rem]" />
+        <div className="mt-10 md:mt-[6rem]" />
 
-        <div className="relative w-full h-[50px]">
+        <div className="relative w-full h-[32px] md:h-[50px]">
           <Image
-            className=" object-contain"
+            className=" object-cover md:object-contain"
             fill
             quality={100}
             src="/img/wavy-line.png"
@@ -26,8 +26,8 @@ const Roadmap = () => {
         </div>
         <div className=" mt-[2rem]" />
 
-        <Wrapper className="max-w-screen-2xl py-20">
-          <div className="w-full flex flex-row items-center justify-between gap-6">
+        <Wrapper className=" max-w-full md:max-w-screen-2xl py-20">
+          <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
             <div className="transition-transform hover:-translate-y-1 cursor-pointer w-full">
               <div className="relative shrink-0 bg-[#141826] rounded-2xl h-[340px] py-8 w-full px-8">
                 <p className="mt-1.5 text-lg font-medium font-sora text-white">

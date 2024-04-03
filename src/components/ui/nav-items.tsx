@@ -53,7 +53,7 @@ export const NavItems = () => {
   const activeLink = useScrollspy(ids, 54);
 
   return (
-    <div className="flex gap-10">
+    <div className="flex flex-col items-center md:flex-row gap-6 md:gap-10">
       {navigation.map((item) => {
         const isSelected = item.link.slice(2) === activeLink;
         return (

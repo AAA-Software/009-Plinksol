@@ -3,11 +3,11 @@ import AboutSvg from "../svg/about-text";
 const About = () => {
   return (
     <div id="about" className=" w-full ">
-      <div className=" pt-[15rem]" />
+      <div className=" pt-10 md:pt-[15rem]" />
       <div className="w-full flex flex-col items-center">
         <div className=" relative flex items-center flex-col">
           <AboutSvg />
-          <h2 className=" font-sora text-6xl font-bold text-white text-center absolute top-14">
+          <h2 className=" font-sora text-5xl md:text-6xl font-bold text-white text-center absolute top-14">
             What is Plinko
           </h2>
         </div>
@@ -24,7 +24,7 @@ const About = () => {
         <video
           autoPlay
           loop
-          controls
+          muted
           className="w-[1080px] h-fit rounded-2xl border border-white/5 mt-10"
         >
           <source src="/vid/demo.mp4" />

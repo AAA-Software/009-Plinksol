@@ -15,10 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className=" scroll-smooth">
+    <html lang="en" className=" scroll-smooth overflow-x-hidden">
       <body
         className={cn(
-          "antialiased select-none bg-[#10121A] mx-0",
+          "antialiased select-none bg-[#10121A]",
           `${sora.variable}`
         )}
       >

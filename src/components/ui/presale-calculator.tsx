@@ -1,18 +1,17 @@
 import Image from "next/image";
-import { Button } from "./button";
 import { Progress } from "./progress";
 import { SparklesPreview } from "./sparkles";
 
 const PresaleCalculator = () => {
   return (
-    <div className="mt-20 mb-20 w-[450px]">
+    <div className="mt-20 mb-20 w-full px-3 md:w-[450px]">
       <div className=" flex flex-col items-center w-full">
-        <div className="bg-[#59B22B] w-fit rounded-full py-2 z-10 px-6">
-          <p className="text-black font-sora text-lg font-medium">
+        <div className="bg-[#59B22B] w-fit rounded-full py-2 z-10 px-3 md:px-6">
+          <p className="text-black font-sora text-base md:text-lg font-medium">
             1 PlinkSol = $ 0.526 USD
           </p>
         </div>
-        <div className="relative shrink-0 bg-[#141826] -mt-6 rounded-2xl w-[450px] h-[425px] py-10 px-8">
+        <div className="relative shrink-0 bg-[#141826] -mt-6 rounded-2xl w-full md:w-[450px] h-[425px] py-10 px-3 md:px-8">
           <p className="mt-1.5 text-xl font-medium font-sora text-[#59B22B]">
             Join PlinkSol Presale
           </p>

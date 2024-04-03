@@ -8,9 +8,8 @@ import Wrapper from "../wrapper/wrapper";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
-import { NavItems } from "../ui/nav-items";
 
-const Navbar = () => {
+const LegalsNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -51,12 +50,6 @@ const Navbar = () => {
             />
           </div>
         </Link>
-
-        <div className="hidden lg:block">
-          <div className="flex flex-row items-center gap-10 2xl:gap-16">
-            <NavItems />
-          </div>
-        </div>
 
         <div className="hidden lg:block">
           <div className="flex flex-row items-center gap-2 2xl:gap-4">
@@ -100,36 +93,6 @@ const Navbar = () => {
                       <h4 className="mt-6">Home</h4>
                     </Link>
                   </SheetClose>
-                  <SheetClose asChild>
-                    <Link href="/#about-us">
-                      <h4 className="mt-6">About Us</h4>
-                    </Link>
-                  </SheetClose>
-                  <SheetClose asChild>
-                    <Link href="/#plinksol-coin">
-                      <h4 className="mt-6">Plinksol Coin</h4>
-                    </Link>
-                  </SheetClose>
-                  <SheetClose asChild>
-                    <Link href="/#presale">
-                      <h4 className="mt-6">Presale</h4>
-                    </Link>
-                  </SheetClose>
-                  <SheetClose asChild>
-                    <Link href="/#roadmap">
-                      <h4 className="mt-6">Roadmap</h4>
-                    </Link>
-                  </SheetClose>
-                  <SheetClose asChild>
-                    <Link href="/faqs">
-                      <h4 className="mt-6 mb-8">FAQs</h4>
-                    </Link>
-                  </SheetClose>
-                  <div className="w-full flex flex-col items-start gap-1">
-                    <SheetClose asChild>
-                      <Link href="/schedule-call"></Link>
-                    </SheetClose>
-                  </div>
 
                   <div className="flex flex-row-reverse items-center gap-4 mt-4">
                     <SheetClose asChild>
@@ -151,4 +114,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default LegalsNavbar;
