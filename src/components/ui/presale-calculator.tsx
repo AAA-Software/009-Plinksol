@@ -44,7 +44,7 @@ const PresaleCalculator = () => {
           {/* <Button className="w-full py-6 mt-6">Proceed to Checkout</Button> */}
         </div>
         <div className=" border-dashed border-t border-t-white/15 w-[90%]" />
-        <div className="bg-[#141826] rounded-2xl flex items-center justify-center py-4 h-20 w-[105%]">
+        <div className="bg-[#141826] rounded-t-2xl flex items-center justify-center py-4 h-20 w-full md:w-[105%]">
           {""}
         </div>
       </div>

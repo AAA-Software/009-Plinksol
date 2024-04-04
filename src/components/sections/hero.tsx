@@ -13,7 +13,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center w-full absolute top-14 md:top-20 z-10">
+      <div className="flex flex-col items-center w-full absolute top-28 md:top-40 z-10">
         <div className=" md:hidden w-full">
           <div className="flex flex-row items-center w-full justify-center">
             <div className=" relative h-[3px] w-[50px]">
@@ -113,7 +113,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=" absolute bottom-[-8rem] md:bottom-[-10rem] lg:bottom-[-10rem] xl:bottom-[-10rem] 2xl:bottom-20 w-full h-full">
+      <div className=" absolute bottom-[-8rem] md:bottom-[-10rem] lg:bottom-[-10rem] xl:bottom-[-10rem] 2xl:bottom-6 w-full h-full">
         <div className="relative w-full h-[70%] 2xl:h-full">
           <Image
             className=" object-cover lg:object-contain"
