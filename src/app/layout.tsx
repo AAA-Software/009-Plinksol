@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en" className=" scroll-smooth overflow-x-hidden">
       <body
         className={cn(
-          "antialiased select-none bg-[#10121A]",
+          "antialiased select-none bg-[#10121A] overflow-x-hidden",
           `${sora.variable}`
         )}
       >
