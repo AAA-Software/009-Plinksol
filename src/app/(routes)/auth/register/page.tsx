@@ -1,7 +1,9 @@
+import RegisterForm from "@/components/auth/register-form";
+
 const SignUp = () => {
-    return ( 
-        <div></div>
-     );
-}
- 
+  return (
+    <RegisterForm registerLabel="" registerUrl="" signinUrl="/auth/signin" />
+  );
+};
+
 export default SignUp;

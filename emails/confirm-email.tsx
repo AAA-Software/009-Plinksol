@@ -12,30 +12,30 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 
-interface Hire1WelcomeEmailProps {
+interface WelcomeEmailProps {
   confirmLink: any;
 }
 
-export const Hire1WelcomeEmail = ({ confirmLink }: Hire1WelcomeEmailProps) => (
+export const WelcomeEmail = ({ confirmLink }: WelcomeEmailProps) => (
   <Html>
     <Head />
     <Preview>
-      Welcome to Hire1.ai, confirm your email address and start hiring top 1%
-      MarTech experts
+      Experience the thrill of playing Plinko online, backed by the security and
+      transparency of blockchain technology.
     </Preview>
     <Body style={main}>
       <Container style={container}>
         <Img
-          src="https://res.cloudinary.com/dlnsqeeos/image/upload/v1711947506/o0dtho5imc9kyezluwap.png"
+          src="http://res.cloudinary.com/dlnsqeeos/image/upload/v1712223730/hosfc0q080hahzrvijv2.png"
           width="115"
           height="35"
-          alt="Koala"
+          alt="Plinksol"
           style={logo}
         />
         <Hr style={hr} />
         <Text style={paragraph}>
-          Welcome to Hire1.ai, the AI powered platform for hiring top 1% martech
-          experts in the industry.
+          Welcome to PlinkoSol, experience the thrill of playing Plinko online,
+          backed by the security and transparency of blockchain technology.
         </Text>
         <Section style={btnContainer}>
           <Button style={button} href={confirmLink}>
@@ -45,32 +45,30 @@ export const Hire1WelcomeEmail = ({ confirmLink }: Hire1WelcomeEmailProps) => (
         <Text style={paragraph}>
           Best,
           <br />
-          The Hire1.ai team
+          The PlinkSol team
         </Text>
         <Hr style={hr} />
-        <Text style={footer}>
-          470 Noor Ave STE B #1148, South San Francisco, CA 94080
-        </Text>
+        <Text style={footer}>Pfanghofweg 79, 8045 Graz, Austria</Text>
       </Container>
     </Body>
   </Html>
 );
 
-Hire1WelcomeEmail.PreviewProps = {
+WelcomeEmail.PreviewProps = {
   confirmLink: "https://test.com",
-} as Hire1WelcomeEmailProps;
+} as WelcomeEmailProps;
 
-export default Hire1WelcomeEmail;
+export default WelcomeEmail;
 
 const main = {
-  backgroundColor: "#020617",
+  backgroundColor: "#10121A",
   fontFamily:
     '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
 };
 
 const container = {
   margin: "0 auto",
-  padding: "20px 0 48px",
+  padding: "40px 20px 8px 20px",
 };
 
 const logo = {
@@ -88,7 +86,7 @@ const btnContainer = {
 };
 
 const button = {
-  backgroundColor: "#1BC5E1",
+  backgroundColor: "#3BA901",
   borderRadius: "8px",
   color: "#000000",
   fontWeight: "500",
@@ -106,5 +104,5 @@ const hr = {
 
 const footer = {
   color: "#ABABAB",
-  fontSize: "12px",
+  fontSize: "14px",
 };

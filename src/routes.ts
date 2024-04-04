@@ -1,4 +1,8 @@
-export const publicRoutes = ["/"];
+export const publicRoutes = [
+  "/",
+  "/legals/terms-of-service",
+  "/legals/privacy-policy",
+];
 
 export const authRoutes = [
   "/auth/signin",

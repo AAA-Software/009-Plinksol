@@ -47,9 +47,9 @@ export const NewVerificationForm = () => {
       backButtonAction="Sign In"
     >
       <div className="flex items-center w-full justify-center">
-        {!success && !error && <BeatLoader />}
+        {!success && !error && <BeatLoader color="#fff" size={12} />}
         <FormSuccess message={success} />
-        {!success && <FormError message={error} />}
+        {!success && <FormError clas message={error} />}
       </div>
     </CardWrapper>
   );

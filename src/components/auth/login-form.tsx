@@ -25,6 +25,7 @@ import * as z from "zod";
 import { login } from "../../actions/login";
 import { Checkbox } from "../ui/checkbox";
 import { Separator } from "../ui/separator";
+import { BeatLoader } from "react-spinners";
 interface LoginFormProps {
   signinLabel: string;
   signinUrl: string;
@@ -76,11 +77,11 @@ const LoginForm = ({ signinLabel, registerUrl, signinUrl }: LoginFormProps) => {
     });
   };
   return (
-    <Wrapper className="text-white font-sora flex justify-center gap-60 mt-20 z-10">
+    <Wrapper className="text-white font-sora flex justify-center lg:gap-24 xl:gap-60 mt-4 md:mt-20 z-10">
       {/* text */}
       {!showTwoFactor && (
-        <>
-          <div className="flex flex-col gap-20">
+        <div className="hidden lg:block">
+          <div className="flex flex-col gap-10">
             <div>
               <h3 className="font-semibold mb-1 text-xl font-sora">
                 PlinkSol Presale
@@ -91,7 +92,7 @@ const LoginForm = ({ signinLabel, registerUrl, signinUrl }: LoginFormProps) => {
               </p>
             </div>
           </div>
-        </>
+        </div>
       )}
       {/* form */}
       <CardWrapper
@@ -101,7 +102,7 @@ const LoginForm = ({ signinLabel, registerUrl, signinUrl }: LoginFormProps) => {
         backButtonHref={registerUrl}
       >
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="-mt-2">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="md:-mt-2">
             {showTwoFactor && (
               <FormField
                 control={form.control}
@@ -139,7 +140,7 @@ const LoginForm = ({ signinLabel, registerUrl, signinUrl }: LoginFormProps) => {
                             disabled={isPending}
                             placeholder="Email address"
                             type="email"
-                            className="bg-[#262A3A] text-[18px] border-none"
+                            className="bg-transparent rounded-none text-[18px] border-none"
                           />
                         </div>
                       </FormControl>
@@ -175,7 +176,7 @@ const LoginForm = ({ signinLabel, registerUrl, signinUrl }: LoginFormProps) => {
                     size="sm"
                     variant="link"
                     asChild
-                    className="px-0 font-normal md:font-normal text-white"
+                    className="px-0 font-light md:font-light text-[#7A84A9] hover:text-white transition-colors ease-in-out"
                   >
                     <Link href="/auth/reset">Forgot password?</Link>
                   </Button>
@@ -184,7 +185,7 @@ const LoginForm = ({ signinLabel, registerUrl, signinUrl }: LoginFormProps) => {
                     <Checkbox id="remember" />
                     <label
                       htmlFor="remember"
-                      className="text-base font-sora font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      className="text-base font-sora font-light text-[#7A84A9] leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                     >
                       Remember me
                     </label>
@@ -199,17 +200,21 @@ const LoginForm = ({ signinLabel, registerUrl, signinUrl }: LoginFormProps) => {
               disabled={isPending}
               className="bg-gradient-to-r from-[#6AD035] to-[#3BA901] hover:opacity-80 transition-all ease-in-out duration-200 w-full py-6 text-[18px] text-black"
             >
-              {showTwoFactor ? "Confirm" : "Sign in to account"}
+              {isPending ? (
+                <BeatLoader color="#000" size={8} />
+              ) : (
+                `${showTwoFactor ? "Confirm" : "Sign in to account"}`
+              )}
             </Button>
           </form>
         </Form>
 
         <div className="w-full flex items-center justify-between mt-6">
-          <Separator className="w-[180px]" />
+          <Separator className=" w-[140px] md:w-[180px]" />
           <div className=" text-[#7A84A9] font-light px-4 py-1 rounded-full bg-[#262A3A] text-base font-sora">
             OR
           </div>
-          <Separator className="w-[180px]" />
+          <Separator className=" w-[140px] md:w-[180px]" />
         </div>
 
         <Button className="bg-[#262A3A] text-white font-sora font-light md:font-light w-full hover:bg-[#353950] mt-6 mb-2 py-6">

@@ -1,6 +1,6 @@
-import { Resend } from "resend";
-import Hire1WelcomeEmail from "../../emails/confirm-email";
 import { render } from "@react-email/components";
+import { Resend } from "resend";
+import { WelcomeEmail } from "../../emails/confirm-email";
 import ResetPasswordEmail from "../../emails/reset-password";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -34,6 +34,6 @@ export const sendVerificationEmail = async (email: string, token: string) => {
     from: "onboarding@resend.dev",
     to: email,
     subject: "Confirm your email",
-    html: render(Hire1WelcomeEmail({ confirmLink })),
+    html: render(WelcomeEmail({ confirmLink })),
   });
 };
