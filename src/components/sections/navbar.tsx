@@ -60,10 +60,15 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <div className="flex flex-row items-center gap-2 2xl:gap-4">
             <Link href="/auth/signin">
-              <Button variant={"link"}>Login</Button>
+              <Button
+                className="transition-transform hover:-translate-y-1"
+                variant={"link"}
+              >
+                Login
+              </Button>
             </Link>
             <Link href="/auth/register">
-              <Button>
+              <Button className="transition-transform hover:scale-105 ease-in-out duration-200">
                 Sign Up <ArrowRight className="ml-3" />
               </Button>
             </Link>

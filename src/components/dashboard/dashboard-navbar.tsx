@@ -1,7 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { logout } from "@/actions/logout";
+import { useRouter } from "next/navigation";
 
 const DashboardNavbar = () => {
+  const router = useRouter();
+  const signOut = () => {
+    logout();
+    router.push("/");
+  };
+
   return (
     <div className="w-full py-3 flex items-center justify-between">
       <div>
@@ -42,6 +52,14 @@ const DashboardNavbar = () => {
           <div className="h-12 w-12 aspect-square rounded-full bg-[#1A1D29] flex items-center justify-center">
             <div className="relative w-6 h-6">
               <Image fill src="/img/settings.svg" alt="Settings" />
+            </div>
+          </div>
+          <div
+            onClick={signOut}
+            className="h-12 w-12 aspect-square rounded-full bg-[#1A1D29] flex items-center justify-center hover:bg-[#181B26] cursor-pointer"
+          >
+            <div className="relative w-6 h-6">
+              <Image fill src="/img/sign-out.svg" alt="Sign Out" />
             </div>
           </div>
         </div>

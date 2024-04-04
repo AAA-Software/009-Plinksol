@@ -108,8 +108,15 @@ const Hero = () => {
         </p>
 
         <div className=" flex flex-row items-center gap-4 mt-6">
-          <Button>Join Presale Now</Button>
-          <Button variant={"outline"}>Learn More</Button>
+          <Button className="transition-transform hover:-translate-y-1">
+            Join Presale Now
+          </Button>
+          <Button
+            className="transition-transform hover:-translate-y-1"
+            variant={"outline"}
+          >
+            Learn More
+          </Button>
         </div>
       </div>
 

@@ -32,10 +32,10 @@ const LegalsNavbar = () => {
   }, []);
   return (
     <div
-      className={`w-full py-2 sticky top-0 z-[999999] ${
+      className={`w-full py-2 fixed top-0 z-[999999] ${
         isScrolled
           ? "bg-[#0E1017] border-b border-b-white/5"
-          : " bg-transparent border-b border-b-white/5"
+          : " bg-transparent"
       }`}
     >
       <Wrapper className="flex flex-row justify-between items-center">
