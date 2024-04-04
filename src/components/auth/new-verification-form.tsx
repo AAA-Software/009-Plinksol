@@ -49,7 +49,7 @@ export const NewVerificationForm = () => {
       <div className="flex items-center w-full justify-center">
         {!success && !error && <BeatLoader color="#fff" size={12} />}
         <FormSuccess message={success} />
-        {!success && <FormError clas message={error} />}
+        {!success && <FormError message={error} />}
       </div>
     </CardWrapper>
   );
