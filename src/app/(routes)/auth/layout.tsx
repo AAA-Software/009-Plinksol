@@ -14,7 +14,6 @@ const AuthLayout = ({ children }: { children: ReactNode }) => {
         className=" object-contain absolute right-0"
         alt="Backdrop"
       />
-      {/* <div className="h-20 w-full bg-white md:bg-yellow-300 lg:bg-purple-500 xl:bg-orange-400 2xl:bg-red-500" /> */}
       <Wrapper className="flex flex-row items-center justify-center md:justify-start w-full py-2 md:py-4 sticky top-0">
         <Link href="/">
           <div className=" relative w-[135px] h-[55px] md:w-[135px] md:h-[55px] hover:scale-110 transition-all ease-in-out">
