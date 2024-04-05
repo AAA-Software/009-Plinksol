@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { logout } from "@/actions/logout";
 import { useRouter } from "next/navigation";
+import { useAuthStore } from "@/store/auth";
 
 const DashboardNavbar = () => {
   const router = useRouter();
@@ -11,7 +12,8 @@ const DashboardNavbar = () => {
     logout();
     router.push("/");
   };
-
+  const currentBalance = useAuthStore((state) => state.wallet.balance);
+  const formattedBalance = currentBalance.toLocaleString();
   return (
     <div className="w-full py-3 flex items-center justify-between">
       <div>
@@ -27,7 +29,9 @@ const DashboardNavbar = () => {
               src="/img/balance.svg"
               alt="Balance"
             />
-            <h4 className=" font-sora text-white font-normal">0.00</h4>
+            <h4 className=" font-sora text-white font-normal">
+              {formattedBalance}
+            </h4>
           </div>
           <div>
             <Button className=" rounded-full">Deposit</Button>

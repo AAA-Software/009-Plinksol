@@ -1,5 +1,11 @@
+import Game from "@/components/game/game";
+
 const Dashboard = () => {
-  return <div className=" h-[90dvh] rounded-2xl bg-[#14171F]"></div>;
+  return (
+    <div>
+      <Game />
+    </div>
+  );
 };
 
 export default Dashboard;
